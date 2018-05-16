@@ -25,7 +25,7 @@ sys.path.append(subfolder + "pose-tensorflow/")
 sys.path.append(subfolder + "Generating_a_Training_Set")
 
 from myconfig_analysis import videofolder, cropping, Task, date, \
-    trainingsFraction, resnet, snapshotindex, shuffle,x1, x2, y1, y2
+    trainingsFraction, resnet, snapshotindex, shuffle,x1, x2, y1, y2, videotype
 
 # Deep-cut dependencies
 from config import load_config
@@ -111,8 +111,7 @@ pdindex = pd.MultiIndex.from_product(
 # videofolder='../videos/' #where your folder with videos is.
 
 os.chdir(videofolder)
-
-videos = np.sort([fn for fn in os.listdir(os.curdir) if (".avi" in fn)])
+videos = np.sort([fn for fn in os.listdir(os.curdir) if (videotype in fn)])
 print("Starting ", videofolder, videos)
 for video in videos:
     dataname = video.split('.')[0] + scorer + '.h5'

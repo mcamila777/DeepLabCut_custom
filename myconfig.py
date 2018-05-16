@@ -9,7 +9,7 @@
 
 ########################################
 # Step 1:
-Task = 'standing'#'moving'#'reaching'
+Task = 'standing'#'moving'#'reaching'  'combined'
 ########################################
 
 # Filename and path to behavioral video:
@@ -52,11 +52,11 @@ invisibleboundary=10 # If labels are closer to origin than this number they are 
 # Step 3:
 ########################################
 
-date = 'May16' #May03'
+date = 'May03'#'' #May03'
 scorer = 'camila'
 
 # Userparameters for training set. Other parameters can be set in pose_cfg.yaml
-Shuffles = range(3) #[1]  # Ids for shuffles, i.e. range(5) for 5 shuffles
+Shuffles = [1]# range(3) #[1]  # Ids for shuffles, i.e. range(5) for 5 shuffles
 TrainingFraction = [0.70]  # Fraction of labeled images used for training
 
 # Which resnet to use

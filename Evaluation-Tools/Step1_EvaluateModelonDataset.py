@@ -10,6 +10,7 @@ and stores the results in a pandas dataframe.
 You need tensorflow for evaluation. Run by:
 CUDA_VISIBLE_DEVICES=0 python3 Step1_EvaluateModelonDataset.py
 """
+
 ####################################################
 # Dependencies
 ####################################################
@@ -105,8 +106,10 @@ for shuffle in Shuffles:
             snapindices = [-1]
         elif snapshotindex == "all":
             snapindices = range(len(Snapshots))
+        elif snapshotindex<len(Snapshots):
+            snapindices=[snapshotindex]
         else:
-            print("Invalid choice, only -1 or all (as string)!")
+            print("Invalid choice, only -1 (last), any integer up to last, or all (as string)!")
 
         for snapindex in snapindices:
             cfg['init_weights'] = modelfolder + \
