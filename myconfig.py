@@ -9,7 +9,7 @@
 
 ########################################
 # Step 1:
-Task = 'standing'#'moving'#'reaching'  'combined'
+Task = 'pavel'#'standing'#'moving'#'reaching'  'combined'
 ########################################
 
 # Filename and path to behavioral video:
@@ -35,9 +35,9 @@ portion = 1
 # Step 2:
 ########################################
 
-bodyparts = ["knee"] #["hand", "Finger1", "Finger2",  "Joystick"]  # Exact sequence of labels as were put by
+#bodyparts = ["knee"] #["hand", "Finger1", "Finger2",  "Joystick"]  # Exact sequence of labels as were put by
 
-#bodyparts = ['tail tip', 'tail start', 'front left knee', 'front left foot', 'chin', 'back right knee', 'left eye', 'front right ankle', 'nosetip', 'right shoulder', 'left shoulder', 'back left foot', 'right eye', 'back right ankle', 'left ear', 'front right knee', 'front right foot', 'neck', 'front left ankle', 'back right foot', 'back left knee', 'right ear', 'back left ankle']
+bodyparts =['tail tip', 'back right shoulder', 'tail start', 'front left knee', 'front left foot', 'chin', 'back right knee', 'left eye', 'front right ankle', 'nosetip', 'front right shoulder', 'front left shoulder', 'back left foot', 'right eye', 'back right ankle', 'left ear', 'front right knee', 'front right foot', 'back left shoulder', 'neck', 'front left ankle', 'back right foot', 'back left knee', 'right ear', 'back left ankle']
 
 # annotator in *.csv file
 Scorers = ['camila']  # who is labeling?
@@ -52,7 +52,7 @@ invisibleboundary=10 # If labels are closer to origin than this number they are 
 # Step 3:
 ########################################
 
-date = 'May03'#'' #May03'
+date = 'May03'#''May18'
 scorer = 'camila'
 
 # Userparameters for training set. Other parameters can be set in pose_cfg.yaml

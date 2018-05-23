@@ -1,0 +1,213 @@
+2018-05-22 16:17:06 Config:
+{'all_joints': [[0]],
+ 'all_joints_names': ['knee'],
+ 'batch_size': 1,
+ 'crop': False,
+ 'crop_pad': 0,
+ 'dataset': '../../UnaugmentedDataSet_standingMay03/standing_camila70shuffle1.mat',
+ 'dataset_type': 'default',
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '../../pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'max_input_size': 1000,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 1,
+ 'optimizer': 'sgd',
+ 'pos_dist_thresh': 17,
+ 'regularize': False,
+ 'save_iters': 5000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.5,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': './snapshot',
+ 'stride': 8.0,
+ 'use_gt_segm': False,
+ 'video': False,
+ 'video_batch': False,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2018-05-22 16:17:06 From /is/ps2/calvarez2/DeepLabCut/pose-tensorflow/nnet/pose_net.py:52: calling resnet_arg_scope (from tensorflow.contrib.slim.python.slim.nets.resnet_utils) with is_training is deprecated and will be removed after 2017-08-01.
+Instructions for updating:
+Pass is_training directly to the network instead of the arg_scope.
+2018-05-22 16:17:08 logits.dtype=<dtype: 'float32'>.
+2018-05-22 16:17:08 multi_class_labels.dtype=<dtype: 'float32'>.
+2018-05-22 16:17:08 losses.dtype=<dtype: 'float32'>.
+2018-05-22 16:17:14 Restoring parameters from ../../pretrained/resnet_v1_50.ckpt
+2018-05-22 16:17:15 iteration: 0 loss: 0.0009 lr: 0.005
+2018-05-22 16:19:44 iteration: 1000 loss: 0.0248 lr: 0.005
+2018-05-22 16:22:17 iteration: 2000 loss: 0.0139 lr: 0.005
+2018-05-22 16:24:45 iteration: 3000 loss: 0.0107 lr: 0.005
+2018-05-22 16:27:12 iteration: 4000 loss: 0.0078 lr: 0.005
+2018-05-22 16:29:43 iteration: 5000 loss: 0.0066 lr: 0.005
+2018-05-22 16:29:44 ./snapshot-5000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 16:32:17 iteration: 6000 loss: 0.0058 lr: 0.005
+2018-05-22 16:34:52 iteration: 7000 loss: 0.0051 lr: 0.005
+2018-05-22 16:37:21 iteration: 8000 loss: 0.0046 lr: 0.005
+2018-05-22 16:39:52 iteration: 9000 loss: 0.0047 lr: 0.005
+2018-05-22 16:42:25 iteration: 10000 loss: 0.0041 lr: 0.005
+2018-05-22 16:42:26 ./snapshot-10000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 16:44:57 iteration: 11000 loss: 0.0107 lr: 0.02
+2018-05-22 16:47:30 iteration: 12000 loss: 0.0084 lr: 0.02
+2018-05-22 16:50:04 iteration: 13000 loss: 0.0069 lr: 0.02
+2018-05-22 16:52:35 iteration: 14000 loss: 0.0056 lr: 0.02
+2018-05-22 16:55:08 iteration: 15000 loss: 0.0051 lr: 0.02
+2018-05-22 16:55:09 ./snapshot-15000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 16:57:43 iteration: 16000 loss: 0.0048 lr: 0.02
+2018-05-22 17:00:09 iteration: 17000 loss: 0.0043 lr: 0.02
+2018-05-22 17:02:38 iteration: 18000 loss: 0.0041 lr: 0.02
+2018-05-22 17:05:03 iteration: 19000 loss: 0.0040 lr: 0.02
+2018-05-22 17:07:27 iteration: 20000 loss: 0.0037 lr: 0.02
+2018-05-22 17:07:28 ./snapshot-20000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 17:09:56 iteration: 21000 loss: 0.0033 lr: 0.02
+2018-05-22 17:12:22 iteration: 22000 loss: 0.0034 lr: 0.02
+2018-05-22 17:14:48 iteration: 23000 loss: 0.0032 lr: 0.02
+2018-05-22 17:17:17 iteration: 24000 loss: 0.0031 lr: 0.02
+2018-05-22 17:19:45 iteration: 25000 loss: 0.0031 lr: 0.02
+2018-05-22 17:19:46 ./snapshot-25000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 17:22:14 iteration: 26000 loss: 0.0029 lr: 0.02
+2018-05-22 17:24:45 iteration: 27000 loss: 0.0030 lr: 0.02
+2018-05-22 17:27:11 iteration: 28000 loss: 0.0028 lr: 0.02
+2018-05-22 17:29:35 iteration: 29000 loss: 0.0028 lr: 0.02
+2018-05-22 17:31:57 iteration: 30000 loss: 0.0027 lr: 0.02
+2018-05-22 17:31:58 ./snapshot-30000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 17:34:24 iteration: 31000 loss: 0.0026 lr: 0.02
+2018-05-22 17:36:51 iteration: 32000 loss: 0.0028 lr: 0.02
+2018-05-22 17:39:19 iteration: 33000 loss: 0.0025 lr: 0.02
+2018-05-22 17:41:44 iteration: 34000 loss: 0.0025 lr: 0.02
+2018-05-22 17:44:10 iteration: 35000 loss: 0.0027 lr: 0.02
+2018-05-22 17:44:11 ./snapshot-35000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 17:46:42 iteration: 36000 loss: 0.0026 lr: 0.02
+2018-05-22 17:49:05 iteration: 37000 loss: 0.0024 lr: 0.02
+2018-05-22 17:51:28 iteration: 38000 loss: 0.0024 lr: 0.02
+2018-05-22 17:53:51 iteration: 39000 loss: 0.0026 lr: 0.02
+2018-05-22 17:56:15 iteration: 40000 loss: 0.0024 lr: 0.02
+2018-05-22 17:56:15 ./snapshot-40000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 17:58:42 iteration: 41000 loss: 0.0023 lr: 0.02
+2018-05-22 18:01:09 iteration: 42000 loss: 0.0023 lr: 0.02
+2018-05-22 18:03:35 iteration: 43000 loss: 0.0021 lr: 0.02
+2018-05-22 18:06:03 iteration: 44000 loss: 0.0023 lr: 0.02
+2018-05-22 18:08:25 iteration: 45000 loss: 0.0021 lr: 0.02
+2018-05-22 18:08:26 ./snapshot-45000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 18:10:57 iteration: 46000 loss: 0.0022 lr: 0.02
+2018-05-22 18:13:22 iteration: 47000 loss: 0.0022 lr: 0.02
+2018-05-22 18:15:50 iteration: 48000 loss: 0.0021 lr: 0.02
+2018-05-22 18:18:18 iteration: 49000 loss: 0.0021 lr: 0.02
+2018-05-22 18:20:41 iteration: 50000 loss: 0.0021 lr: 0.02
+2018-05-22 18:20:42 ./snapshot-50000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 18:23:09 iteration: 51000 loss: 0.0021 lr: 0.02
+2018-05-22 18:25:37 iteration: 52000 loss: 0.0020 lr: 0.02
+2018-05-22 18:28:06 iteration: 53000 loss: 0.0022 lr: 0.02
+2018-05-22 18:30:37 iteration: 54000 loss: 0.0020 lr: 0.02
+2018-05-22 18:33:03 iteration: 55000 loss: 0.0021 lr: 0.02
+2018-05-22 18:33:04 ./snapshot-55000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 18:35:30 iteration: 56000 loss: 0.0020 lr: 0.02
+2018-05-22 18:37:57 iteration: 57000 loss: 0.0020 lr: 0.02
+2018-05-22 18:40:23 iteration: 58000 loss: 0.0020 lr: 0.02
+2018-05-22 18:42:48 iteration: 59000 loss: 0.0019 lr: 0.02
+2018-05-22 18:45:15 iteration: 60000 loss: 0.0021 lr: 0.02
+2018-05-22 18:45:16 ./snapshot-60000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 18:47:42 iteration: 61000 loss: 0.0019 lr: 0.02
+2018-05-22 18:50:08 iteration: 62000 loss: 0.0019 lr: 0.02
+2018-05-22 18:52:36 iteration: 63000 loss: 0.0020 lr: 0.02
+2018-05-22 18:55:00 iteration: 64000 loss: 0.0019 lr: 0.02
+2018-05-22 18:57:23 iteration: 65000 loss: 0.0019 lr: 0.02
+2018-05-22 18:57:24 ./snapshot-65000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 18:59:52 iteration: 66000 loss: 0.0019 lr: 0.02
+2018-05-22 19:02:15 iteration: 67000 loss: 0.0019 lr: 0.02
+2018-05-22 19:04:45 iteration: 68000 loss: 0.0019 lr: 0.02
+2018-05-22 19:07:10 iteration: 69000 loss: 0.0019 lr: 0.02
+2018-05-22 19:09:36 iteration: 70000 loss: 0.0018 lr: 0.02
+2018-05-22 19:09:37 ./snapshot-70000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 19:12:05 iteration: 71000 loss: 0.0018 lr: 0.02
+2018-05-22 19:14:34 iteration: 72000 loss: 0.0018 lr: 0.02
+2018-05-22 19:17:01 iteration: 73000 loss: 0.0018 lr: 0.02
+2018-05-22 19:19:29 iteration: 74000 loss: 0.0017 lr: 0.02
+2018-05-22 19:21:57 iteration: 75000 loss: 0.0019 lr: 0.02
+2018-05-22 19:21:58 ./snapshot-75000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 19:24:29 iteration: 76000 loss: 0.0018 lr: 0.02
+2018-05-22 19:26:54 iteration: 77000 loss: 0.0018 lr: 0.02
+2018-05-22 19:29:22 iteration: 78000 loss: 0.0018 lr: 0.02
+2018-05-22 19:31:52 iteration: 79000 loss: 0.0017 lr: 0.02
+2018-05-22 19:34:19 iteration: 80000 loss: 0.0018 lr: 0.02
+2018-05-22 19:34:20 ./snapshot-80000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 19:36:49 iteration: 81000 loss: 0.0018 lr: 0.02
+2018-05-22 19:39:20 iteration: 82000 loss: 0.0017 lr: 0.02
+2018-05-22 19:41:47 iteration: 83000 loss: 0.0018 lr: 0.02
+2018-05-22 19:44:14 iteration: 84000 loss: 0.0019 lr: 0.02
+2018-05-22 19:46:42 iteration: 85000 loss: 0.0017 lr: 0.02
+2018-05-22 19:46:42 ./snapshot-85000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 19:49:07 iteration: 86000 loss: 0.0018 lr: 0.02
+2018-05-22 19:51:33 iteration: 87000 loss: 0.0018 lr: 0.02
+2018-05-22 19:54:02 iteration: 88000 loss: 0.0017 lr: 0.02
+2018-05-22 19:56:30 iteration: 89000 loss: 0.0018 lr: 0.02
+2018-05-22 19:58:59 iteration: 90000 loss: 0.0017 lr: 0.02
+2018-05-22 19:59:00 ./snapshot-90000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 20:01:26 iteration: 91000 loss: 0.0016 lr: 0.02
+2018-05-22 20:03:54 iteration: 92000 loss: 0.0017 lr: 0.02
+2018-05-22 20:06:18 iteration: 93000 loss: 0.0017 lr: 0.02
+2018-05-22 20:08:45 iteration: 94000 loss: 0.0017 lr: 0.02
+2018-05-22 20:11:12 iteration: 95000 loss: 0.0017 lr: 0.02
+2018-05-22 20:11:13 ./snapshot-95000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 20:13:45 iteration: 96000 loss: 0.0017 lr: 0.02
+2018-05-22 20:16:07 iteration: 97000 loss: 0.0017 lr: 0.02
+2018-05-22 20:18:31 iteration: 98000 loss: 0.0017 lr: 0.02
+2018-05-22 20:20:57 iteration: 99000 loss: 0.0018 lr: 0.02
+2018-05-22 20:23:22 iteration: 100000 loss: 0.0017 lr: 0.02
+2018-05-22 20:23:23 ./snapshot-100000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 20:25:52 iteration: 101000 loss: 0.0017 lr: 0.02
+2018-05-22 20:28:15 iteration: 102000 loss: 0.0016 lr: 0.02
+2018-05-22 20:30:42 iteration: 103000 loss: 0.0016 lr: 0.02
+2018-05-22 20:33:09 iteration: 104000 loss: 0.0016 lr: 0.02
+2018-05-22 20:35:39 iteration: 105000 loss: 0.0016 lr: 0.02
+2018-05-22 20:35:40 ./snapshot-105000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 20:38:09 iteration: 106000 loss: 0.0016 lr: 0.02
+2018-05-22 20:40:33 iteration: 107000 loss: 0.0016 lr: 0.02
+2018-05-22 20:42:56 iteration: 108000 loss: 0.0016 lr: 0.02
+2018-05-22 20:45:21 iteration: 109000 loss: 0.0017 lr: 0.02
+2018-05-22 20:47:51 iteration: 110000 loss: 0.0017 lr: 0.02
+2018-05-22 20:47:51 ./snapshot-110000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 20:50:19 iteration: 111000 loss: 0.0016 lr: 0.02
+2018-05-22 20:52:44 iteration: 112000 loss: 0.0016 lr: 0.02
+2018-05-22 20:55:07 iteration: 113000 loss: 0.0016 lr: 0.02
+2018-05-22 20:57:36 iteration: 114000 loss: 0.0016 lr: 0.02
+2018-05-22 21:00:06 iteration: 115000 loss: 0.0017 lr: 0.02
+2018-05-22 21:00:07 ./snapshot-115000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 21:02:36 iteration: 116000 loss: 0.0016 lr: 0.02
+2018-05-22 21:04:56 iteration: 117000 loss: 0.0016 lr: 0.02
+2018-05-22 21:07:22 iteration: 118000 loss: 0.0016 lr: 0.02
+2018-05-22 21:09:43 iteration: 119000 loss: 0.0017 lr: 0.02
+2018-05-22 21:12:10 iteration: 120000 loss: 0.0016 lr: 0.02
+2018-05-22 21:12:11 ./snapshot-120000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 21:14:36 iteration: 121000 loss: 0.0015 lr: 0.02
+2018-05-22 21:16:59 iteration: 122000 loss: 0.0015 lr: 0.02
+2018-05-22 21:19:27 iteration: 123000 loss: 0.0017 lr: 0.02
+2018-05-22 21:21:50 iteration: 124000 loss: 0.0015 lr: 0.02
+2018-05-22 21:24:13 iteration: 125000 loss: 0.0016 lr: 0.02
+2018-05-22 21:24:14 ./snapshot-125000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 21:26:44 iteration: 126000 loss: 0.0015 lr: 0.02
+2018-05-22 21:29:10 iteration: 127000 loss: 0.0015 lr: 0.02
+2018-05-22 21:31:33 iteration: 128000 loss: 0.0016 lr: 0.02
+2018-05-22 21:34:01 iteration: 129000 loss: 0.0015 lr: 0.02
+2018-05-22 21:36:28 iteration: 130000 loss: 0.0016 lr: 0.02
+2018-05-22 21:36:29 ./snapshot-130000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-05-22 21:38:57 iteration: 131000 loss: 0.0015 lr: 0.02
+2018-05-22 21:41:20 iteration: 132000 loss: 0.0016 lr: 0.02
+2018-05-22 21:43:47 iteration: 133000 loss: 0.0015 lr: 0.02
+2018-05-22 21:46:14 iteration: 134000 loss: 0.0015 lr: 0.02

@@ -1,6 +1,2 @@
-model_checkpoint_path: "snapshot-500000"
-all_model_checkpoint_paths: "snapshot-300000"
-all_model_checkpoint_paths: "snapshot-350000"
-all_model_checkpoint_paths: "snapshot-400000"
-all_model_checkpoint_paths: "snapshot-450000"
-all_model_checkpoint_paths: "snapshot-500000"
+model_checkpoint_path: "snapshot-316000"
+all_model_checkpoint_paths: "snapshot-316000"

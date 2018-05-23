@@ -1,0 +1,547 @@
+Config:
+{'all_joints': [[0]],
+ 'all_joints_names': ['knee'],
+ 'batch_size': 1,
+ 'crop': False,
+ 'crop_pad': 0,
+ 'dataset': '../../UnaugmentedDataSet_standingMay18/standing_camila70shuffle1.mat',
+ 'dataset_type': 'default',
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '../../pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'max_input_size': 1000,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'multi_step': [[0.005, 10000],
+                [0.002, 430000],
+                [0.001, 730000],
+                [0.0001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 1,
+ 'optimizer': 'sgd',
+ 'pos_dist_thresh': 17,
+ 'regularize': False,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.5,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': './snapshot',
+ 'stride': 8.0,
+ 'use_gt_segm': False,
+ 'video': False,
+ 'video_batch': False,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+WARNING:tensorflow:From /is/ps2/calvarez2/DeepLabCut/pose-tensorflow/nnet/pose_net.py:52: calling resnet_arg_scope (from tensorflow.contrib.slim.python.slim.nets.resnet_utils) with is_training is deprecated and will be removed after 2017-08-01.
+Instructions for updating:
+Pass is_training directly to the network instead of the arg_scope.
+From /is/ps2/calvarez2/DeepLabCut/pose-tensorflow/nnet/pose_net.py:52: calling resnet_arg_scope (from tensorflow.contrib.slim.python.slim.nets.resnet_utils) with is_training is deprecated and will be removed after 2017-08-01.
+Instructions for updating:
+Pass is_training directly to the network instead of the arg_scope.
+INFO:tensorflow:logits.dtype=<dtype: 'float32'>.
+logits.dtype=<dtype: 'float32'>.
+INFO:tensorflow:multi_class_labels.dtype=<dtype: 'float32'>.
+multi_class_labels.dtype=<dtype: 'float32'>.
+INFO:tensorflow:losses.dtype=<dtype: 'float32'>.
+losses.dtype=<dtype: 'float32'>.
+2018-05-22 23:19:14.674531: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-05-22 23:19:14.674561: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-05-22 23:19:14.674566: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-05-22 23:19:14.674570: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-05-22 23:19:14.674574: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-05-22 23:19:17.700537: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB
+major: 6 minor: 0 memoryClockRate (GHz) 1.3285
+pciBusID 0000:08:00.0
+Total memory: 15.89GiB
+Free memory: 15.60GiB
+2018-05-22 23:19:17.700582: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2018-05-22 23:19:17.700590: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2018-05-22 23:19:17.700600: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:08:00.0)
+INFO:tensorflow:Restoring parameters from ../../pretrained/resnet_v1_50.ckpt
+Restoring parameters from ../../pretrained/resnet_v1_50.ckpt
+iteration: 0 loss: 0.0007 lr: 0.005
+iteration: 1000 loss: 0.0248 lr: 0.005
+iteration: 2000 loss: 0.0138 lr: 0.005
+iteration: 3000 loss: 0.0101 lr: 0.005
+iteration: 4000 loss: 0.0077 lr: 0.005
+iteration: 5000 loss: 0.0063 lr: 0.005
+iteration: 6000 loss: 0.0056 lr: 0.005
+iteration: 7000 loss: 0.0051 lr: 0.005
+iteration: 8000 loss: 0.0046 lr: 0.005
+iteration: 9000 loss: 0.0043 lr: 0.005
+iteration: 10000 loss: 0.0039 lr: 0.005
+iteration: 11000 loss: 0.0033 lr: 0.002
+iteration: 12000 loss: 0.0029 lr: 0.002
+iteration: 13000 loss: 0.0030 lr: 0.002
+iteration: 14000 loss: 0.0027 lr: 0.002
+iteration: 15000 loss: 0.0028 lr: 0.002
+iteration: 16000 loss: 0.0028 lr: 0.002
+iteration: 17000 loss: 0.0026 lr: 0.002
+iteration: 18000 loss: 0.0025 lr: 0.002
+iteration: 19000 loss: 0.0027 lr: 0.002
+iteration: 20000 loss: 0.0025 lr: 0.002
+iteration: 21000 loss: 0.0026 lr: 0.002
+iteration: 22000 loss: 0.0024 lr: 0.002
+iteration: 23000 loss: 0.0025 lr: 0.002
+iteration: 24000 loss: 0.0024 lr: 0.002
+iteration: 25000 loss: 0.0024 lr: 0.002
+iteration: 26000 loss: 0.0024 lr: 0.002
+iteration: 27000 loss: 0.0023 lr: 0.002
+iteration: 28000 loss: 0.0024 lr: 0.002
+iteration: 29000 loss: 0.0023 lr: 0.002
+iteration: 30000 loss: 0.0024 lr: 0.002
+iteration: 31000 loss: 0.0023 lr: 0.002
+iteration: 32000 loss: 0.0023 lr: 0.002
+iteration: 33000 loss: 0.0023 lr: 0.002
+iteration: 34000 loss: 0.0023 lr: 0.002
+iteration: 35000 loss: 0.0020 lr: 0.002
+iteration: 36000 loss: 0.0022 lr: 0.002
+iteration: 37000 loss: 0.0022 lr: 0.002
+iteration: 38000 loss: 0.0023 lr: 0.002
+iteration: 39000 loss: 0.0021 lr: 0.002
+iteration: 40000 loss: 0.0022 lr: 0.002
+iteration: 41000 loss: 0.0021 lr: 0.002
+iteration: 42000 loss: 0.0021 lr: 0.002
+iteration: 43000 loss: 0.0020 lr: 0.002
+iteration: 44000 loss: 0.0020 lr: 0.002
+iteration: 45000 loss: 0.0021 lr: 0.002
+iteration: 46000 loss: 0.0021 lr: 0.002
+iteration: 47000 loss: 0.0021 lr: 0.002
+iteration: 48000 loss: 0.0021 lr: 0.002
+iteration: 49000 loss: 0.0020 lr: 0.002
+iteration: 50000 loss: 0.0019 lr: 0.002
+INFO:tensorflow:./snapshot-50000 is not in all_model_checkpoint_paths. Manually adding it.
+./snapshot-50000 is not in all_model_checkpoint_paths. Manually adding it.
+iteration: 51000 loss: 0.0020 lr: 0.002
+iteration: 52000 loss: 0.0021 lr: 0.002
+iteration: 53000 loss: 0.0021 lr: 0.002
+iteration: 54000 loss: 0.0021 lr: 0.002
+iteration: 55000 loss: 0.0020 lr: 0.002
+iteration: 56000 loss: 0.0019 lr: 0.002
+iteration: 57000 loss: 0.0020 lr: 0.002
+iteration: 58000 loss: 0.0020 lr: 0.002
+iteration: 59000 loss: 0.0020 lr: 0.002
+iteration: 60000 loss: 0.0019 lr: 0.002
+iteration: 61000 loss: 0.0019 lr: 0.002
+iteration: 62000 loss: 0.0019 lr: 0.002
+iteration: 63000 loss: 0.0021 lr: 0.002
+iteration: 64000 loss: 0.0018 lr: 0.002
+iteration: 65000 loss: 0.0019 lr: 0.002
+iteration: 66000 loss: 0.0019 lr: 0.002
+iteration: 67000 loss: 0.0020 lr: 0.002
+iteration: 68000 loss: 0.0019 lr: 0.002
+iteration: 69000 loss: 0.0020 lr: 0.002
+iteration: 70000 loss: 0.0018 lr: 0.002
+iteration: 71000 loss: 0.0018 lr: 0.002
+iteration: 72000 loss: 0.0019 lr: 0.002
+iteration: 73000 loss: 0.0019 lr: 0.002
+iteration: 74000 loss: 0.0018 lr: 0.002
+iteration: 75000 loss: 0.0019 lr: 0.002
+iteration: 76000 loss: 0.0018 lr: 0.002
+iteration: 77000 loss: 0.0018 lr: 0.002
+iteration: 78000 loss: 0.0017 lr: 0.002
+iteration: 79000 loss: 0.0018 lr: 0.002
+iteration: 80000 loss: 0.0018 lr: 0.002
+iteration: 81000 loss: 0.0018 lr: 0.002
+iteration: 82000 loss: 0.0019 lr: 0.002
+iteration: 83000 loss: 0.0017 lr: 0.002
+iteration: 84000 loss: 0.0017 lr: 0.002
+iteration: 85000 loss: 0.0017 lr: 0.002
+iteration: 86000 loss: 0.0018 lr: 0.002
+iteration: 87000 loss: 0.0018 lr: 0.002
+iteration: 88000 loss: 0.0018 lr: 0.002
+iteration: 89000 loss: 0.0018 lr: 0.002
+iteration: 90000 loss: 0.0018 lr: 0.002
+iteration: 91000 loss: 0.0018 lr: 0.002
+iteration: 92000 loss: 0.0018 lr: 0.002
+iteration: 93000 loss: 0.0018 lr: 0.002
+iteration: 94000 loss: 0.0017 lr: 0.002
+iteration: 95000 loss: 0.0017 lr: 0.002
+iteration: 96000 loss: 0.0018 lr: 0.002
+iteration: 97000 loss: 0.0018 lr: 0.002
+iteration: 98000 loss: 0.0017 lr: 0.002
+iteration: 99000 loss: 0.0017 lr: 0.002
+iteration: 100000 loss: 0.0017 lr: 0.002
+INFO:tensorflow:./snapshot-100000 is not in all_model_checkpoint_paths. Manually adding it.
+./snapshot-100000 is not in all_model_checkpoint_paths. Manually adding it.
+iteration: 101000 loss: 0.0017 lr: 0.002
+iteration: 102000 loss: 0.0016 lr: 0.002
+iteration: 103000 loss: 0.0017 lr: 0.002
+iteration: 104000 loss: 0.0018 lr: 0.002
+iteration: 105000 loss: 0.0017 lr: 0.002
+iteration: 106000 loss: 0.0017 lr: 0.002
+iteration: 107000 loss: 0.0017 lr: 0.002
+iteration: 108000 loss: 0.0017 lr: 0.002
+iteration: 109000 loss: 0.0018 lr: 0.002
+iteration: 110000 loss: 0.0017 lr: 0.002
+iteration: 111000 loss: 0.0017 lr: 0.002
+iteration: 112000 loss: 0.0017 lr: 0.002
+iteration: 113000 loss: 0.0016 lr: 0.002
+iteration: 114000 loss: 0.0017 lr: 0.002
+iteration: 115000 loss: 0.0017 lr: 0.002
+iteration: 116000 loss: 0.0017 lr: 0.002
+iteration: 117000 loss: 0.0016 lr: 0.002
+iteration: 118000 loss: 0.0016 lr: 0.002
+iteration: 119000 loss: 0.0016 lr: 0.002
+iteration: 120000 loss: 0.0017 lr: 0.002
+iteration: 121000 loss: 0.0017 lr: 0.002
+iteration: 122000 loss: 0.0017 lr: 0.002
+iteration: 123000 loss: 0.0016 lr: 0.002
+iteration: 124000 loss: 0.0017 lr: 0.002
+iteration: 125000 loss: 0.0016 lr: 0.002
+iteration: 126000 loss: 0.0016 lr: 0.002
+iteration: 127000 loss: 0.0016 lr: 0.002
+iteration: 128000 loss: 0.0015 lr: 0.002
+iteration: 129000 loss: 0.0016 lr: 0.002
+iteration: 130000 loss: 0.0016 lr: 0.002
+iteration: 131000 loss: 0.0016 lr: 0.002
+iteration: 132000 loss: 0.0016 lr: 0.002
+iteration: 133000 loss: 0.0016 lr: 0.002
+iteration: 134000 loss: 0.0016 lr: 0.002
+iteration: 135000 loss: 0.0017 lr: 0.002
+iteration: 136000 loss: 0.0016 lr: 0.002
+iteration: 137000 loss: 0.0017 lr: 0.002
+iteration: 138000 loss: 0.0016 lr: 0.002
+iteration: 139000 loss: 0.0016 lr: 0.002
+iteration: 140000 loss: 0.0016 lr: 0.002
+iteration: 141000 loss: 0.0016 lr: 0.002
+iteration: 142000 loss: 0.0015 lr: 0.002
+iteration: 143000 loss: 0.0015 lr: 0.002
+iteration: 144000 loss: 0.0016 lr: 0.002
+iteration: 145000 loss: 0.0015 lr: 0.002
+iteration: 146000 loss: 0.0015 lr: 0.002
+iteration: 147000 loss: 0.0015 lr: 0.002
+iteration: 148000 loss: 0.0016 lr: 0.002
+iteration: 149000 loss: 0.0015 lr: 0.002
+iteration: 150000 loss: 0.0015 lr: 0.002
+INFO:tensorflow:./snapshot-150000 is not in all_model_checkpoint_paths. Manually adding it.
+./snapshot-150000 is not in all_model_checkpoint_paths. Manually adding it.
+iteration: 151000 loss: 0.0015 lr: 0.002
+iteration: 152000 loss: 0.0016 lr: 0.002
+iteration: 153000 loss: 0.0015 lr: 0.002
+iteration: 154000 loss: 0.0016 lr: 0.002
+iteration: 155000 loss: 0.0015 lr: 0.002
+iteration: 156000 loss: 0.0016 lr: 0.002
+iteration: 157000 loss: 0.0015 lr: 0.002
+iteration: 158000 loss: 0.0016 lr: 0.002
+iteration: 159000 loss: 0.0016 lr: 0.002
+iteration: 160000 loss: 0.0015 lr: 0.002
+iteration: 161000 loss: 0.0015 lr: 0.002
+iteration: 162000 loss: 0.0016 lr: 0.002
+iteration: 163000 loss: 0.0016 lr: 0.002
+iteration: 164000 loss: 0.0016 lr: 0.002
+iteration: 165000 loss: 0.0015 lr: 0.002
+iteration: 166000 loss: 0.0015 lr: 0.002
+iteration: 167000 loss: 0.0016 lr: 0.002
+iteration: 168000 loss: 0.0015 lr: 0.002
+iteration: 169000 loss: 0.0015 lr: 0.002
+iteration: 170000 loss: 0.0015 lr: 0.002
+iteration: 171000 loss: 0.0015 lr: 0.002
+iteration: 172000 loss: 0.0015 lr: 0.002
+iteration: 173000 loss: 0.0015 lr: 0.002
+iteration: 174000 loss: 0.0015 lr: 0.002
+iteration: 175000 loss: 0.0015 lr: 0.002
+iteration: 176000 loss: 0.0015 lr: 0.002
+iteration: 177000 loss: 0.0015 lr: 0.002
+iteration: 178000 loss: 0.0014 lr: 0.002
+iteration: 179000 loss: 0.0014 lr: 0.002
+iteration: 180000 loss: 0.0014 lr: 0.002
+iteration: 181000 loss: 0.0015 lr: 0.002
+iteration: 182000 loss: 0.0015 lr: 0.002
+iteration: 183000 loss: 0.0015 lr: 0.002
+iteration: 184000 loss: 0.0015 lr: 0.002
+iteration: 185000 loss: 0.0014 lr: 0.002
+iteration: 186000 loss: 0.0014 lr: 0.002
+iteration: 187000 loss: 0.0015 lr: 0.002
+iteration: 188000 loss: 0.0015 lr: 0.002
+iteration: 189000 loss: 0.0014 lr: 0.002
+iteration: 190000 loss: 0.0014 lr: 0.002
+iteration: 191000 loss: 0.0014 lr: 0.002
+iteration: 192000 loss: 0.0014 lr: 0.002
+iteration: 193000 loss: 0.0014 lr: 0.002
+iteration: 194000 loss: 0.0015 lr: 0.002
+iteration: 195000 loss: 0.0014 lr: 0.002
+iteration: 196000 loss: 0.0015 lr: 0.002
+iteration: 197000 loss: 0.0014 lr: 0.002
+iteration: 198000 loss: 0.0014 lr: 0.002
+iteration: 199000 loss: 0.0015 lr: 0.002
+iteration: 200000 loss: 0.0015 lr: 0.002
+INFO:tensorflow:./snapshot-200000 is not in all_model_checkpoint_paths. Manually adding it.
+./snapshot-200000 is not in all_model_checkpoint_paths. Manually adding it.
+iteration: 201000 loss: 0.0014 lr: 0.002
+iteration: 202000 loss: 0.0015 lr: 0.002
+iteration: 203000 loss: 0.0014 lr: 0.002
+iteration: 204000 loss: 0.0015 lr: 0.002
+iteration: 205000 loss: 0.0014 lr: 0.002
+iteration: 206000 loss: 0.0015 lr: 0.002
+iteration: 207000 loss: 0.0014 lr: 0.002
+iteration: 208000 loss: 0.0014 lr: 0.002
+iteration: 209000 loss: 0.0015 lr: 0.002
+iteration: 210000 loss: 0.0014 lr: 0.002
+iteration: 211000 loss: 0.0014 lr: 0.002
+iteration: 212000 loss: 0.0014 lr: 0.002
+iteration: 213000 loss: 0.0014 lr: 0.002
+iteration: 214000 loss: 0.0014 lr: 0.002
+iteration: 215000 loss: 0.0014 lr: 0.002
+iteration: 216000 loss: 0.0014 lr: 0.002
+iteration: 217000 loss: 0.0013 lr: 0.002
+iteration: 218000 loss: 0.0014 lr: 0.002
+iteration: 219000 loss: 0.0014 lr: 0.002
+iteration: 220000 loss: 0.0014 lr: 0.002
+iteration: 221000 loss: 0.0014 lr: 0.002
+iteration: 222000 loss: 0.0014 lr: 0.002
+iteration: 223000 loss: 0.0014 lr: 0.002
+iteration: 224000 loss: 0.0014 lr: 0.002
+iteration: 225000 loss: 0.0014 lr: 0.002
+iteration: 226000 loss: 0.0014 lr: 0.002
+iteration: 227000 loss: 0.0014 lr: 0.002
+iteration: 228000 loss: 0.0014 lr: 0.002
+iteration: 229000 loss: 0.0013 lr: 0.002
+iteration: 230000 loss: 0.0014 lr: 0.002
+iteration: 231000 loss: 0.0014 lr: 0.002
+iteration: 232000 loss: 0.0014 lr: 0.002
+iteration: 233000 loss: 0.0014 lr: 0.002
+iteration: 234000 loss: 0.0013 lr: 0.002
+iteration: 235000 loss: 0.0014 lr: 0.002
+iteration: 236000 loss: 0.0014 lr: 0.002
+iteration: 237000 loss: 0.0014 lr: 0.002
+iteration: 238000 loss: 0.0013 lr: 0.002
+iteration: 239000 loss: 0.0013 lr: 0.002
+iteration: 240000 loss: 0.0013 lr: 0.002
+iteration: 241000 loss: 0.0014 lr: 0.002
+iteration: 242000 loss: 0.0013 lr: 0.002
+iteration: 243000 loss: 0.0014 lr: 0.002
+iteration: 244000 loss: 0.0014 lr: 0.002
+iteration: 245000 loss: 0.0014 lr: 0.002
+iteration: 246000 loss: 0.0013 lr: 0.002
+iteration: 247000 loss: 0.0014 lr: 0.002
+iteration: 248000 loss: 0.0013 lr: 0.002
+iteration: 249000 loss: 0.0013 lr: 0.002
+iteration: 250000 loss: 0.0013 lr: 0.002
+INFO:tensorflow:./snapshot-250000 is not in all_model_checkpoint_paths. Manually adding it.
+./snapshot-250000 is not in all_model_checkpoint_paths. Manually adding it.
+iteration: 251000 loss: 0.0014 lr: 0.002
+iteration: 252000 loss: 0.0014 lr: 0.002
+iteration: 253000 loss: 0.0013 lr: 0.002
+iteration: 254000 loss: 0.0013 lr: 0.002
+iteration: 255000 loss: 0.0013 lr: 0.002
+iteration: 256000 loss: 0.0013 lr: 0.002
+iteration: 257000 loss: 0.0014 lr: 0.002
+iteration: 258000 loss: 0.0013 lr: 0.002
+iteration: 259000 loss: 0.0013 lr: 0.002
+iteration: 260000 loss: 0.0013 lr: 0.002
+iteration: 261000 loss: 0.0014 lr: 0.002
+iteration: 262000 loss: 0.0013 lr: 0.002
+iteration: 263000 loss: 0.0013 lr: 0.002
+iteration: 264000 loss: 0.0013 lr: 0.002
+iteration: 265000 loss: 0.0013 lr: 0.002
+iteration: 266000 loss: 0.0013 lr: 0.002
+iteration: 267000 loss: 0.0014 lr: 0.002
+iteration: 268000 loss: 0.0013 lr: 0.002
+iteration: 269000 loss: 0.0013 lr: 0.002
+iteration: 270000 loss: 0.0014 lr: 0.002
+iteration: 271000 loss: 0.0014 lr: 0.002
+iteration: 272000 loss: 0.0013 lr: 0.002
+iteration: 273000 loss: 0.0013 lr: 0.002
+iteration: 274000 loss: 0.0013 lr: 0.002
+iteration: 275000 loss: 0.0013 lr: 0.002
+iteration: 276000 loss: 0.0014 lr: 0.002
+iteration: 277000 loss: 0.0013 lr: 0.002
+iteration: 278000 loss: 0.0013 lr: 0.002
+iteration: 279000 loss: 0.0013 lr: 0.002
+iteration: 280000 loss: 0.0013 lr: 0.002
+iteration: 281000 loss: 0.0013 lr: 0.002
+iteration: 282000 loss: 0.0014 lr: 0.002
+iteration: 283000 loss: 0.0013 lr: 0.002
+iteration: 284000 loss: 0.0013 lr: 0.002
+iteration: 285000 loss: 0.0013 lr: 0.002
+iteration: 286000 loss: 0.0013 lr: 0.002
+iteration: 287000 loss: 0.0013 lr: 0.002
+iteration: 288000 loss: 0.0013 lr: 0.002
+iteration: 289000 loss: 0.0014 lr: 0.002
+iteration: 290000 loss: 0.0013 lr: 0.002
+iteration: 291000 loss: 0.0013 lr: 0.002
+iteration: 292000 loss: 0.0013 lr: 0.002
+iteration: 293000 loss: 0.0013 lr: 0.002
+iteration: 294000 loss: 0.0013 lr: 0.002
+iteration: 295000 loss: 0.0013 lr: 0.002
+iteration: 296000 loss: 0.0013 lr: 0.002
+iteration: 297000 loss: 0.0013 lr: 0.002
+iteration: 298000 loss: 0.0013 lr: 0.002
+iteration: 299000 loss: 0.0013 lr: 0.002
+iteration: 300000 loss: 0.0013 lr: 0.002
+INFO:tensorflow:./snapshot-300000 is not in all_model_checkpoint_paths. Manually adding it.
+./snapshot-300000 is not in all_model_checkpoint_paths. Manually adding it.
+iteration: 301000 loss: 0.0013 lr: 0.002
+iteration: 302000 loss: 0.0013 lr: 0.002
+iteration: 303000 loss: 0.0013 lr: 0.002
+iteration: 304000 loss: 0.0013 lr: 0.002
+iteration: 305000 loss: 0.0013 lr: 0.002
+iteration: 306000 loss: 0.0013 lr: 0.002
+iteration: 307000 loss: 0.0013 lr: 0.002
+iteration: 308000 loss: 0.0012 lr: 0.002
+iteration: 309000 loss: 0.0013 lr: 0.002
+iteration: 310000 loss: 0.0013 lr: 0.002
+iteration: 311000 loss: 0.0013 lr: 0.002
+iteration: 312000 loss: 0.0013 lr: 0.002
+iteration: 313000 loss: 0.0012 lr: 0.002
+iteration: 314000 loss: 0.0013 lr: 0.002
+iteration: 315000 loss: 0.0013 lr: 0.002
+iteration: 316000 loss: 0.0013 lr: 0.002
+iteration: 317000 loss: 0.0013 lr: 0.002
+iteration: 318000 loss: 0.0013 lr: 0.002
+iteration: 319000 loss: 0.0013 lr: 0.002
+iteration: 320000 loss: 0.0012 lr: 0.002
+iteration: 321000 loss: 0.0013 lr: 0.002
+iteration: 322000 loss: 0.0013 lr: 0.002
+iteration: 323000 loss: 0.0013 lr: 0.002
+iteration: 324000 loss: 0.0013 lr: 0.002
+iteration: 325000 loss: 0.0013 lr: 0.002
+iteration: 326000 loss: 0.0013 lr: 0.002
+iteration: 327000 loss: 0.0012 lr: 0.002
+iteration: 328000 loss: 0.0012 lr: 0.002
+iteration: 329000 loss: 0.0013 lr: 0.002
+iteration: 330000 loss: 0.0013 lr: 0.002
+iteration: 331000 loss: 0.0012 lr: 0.002
+iteration: 332000 loss: 0.0012 lr: 0.002
+iteration: 333000 loss: 0.0012 lr: 0.002
+iteration: 334000 loss: 0.0012 lr: 0.002
+iteration: 335000 loss: 0.0012 lr: 0.002
+iteration: 336000 loss: 0.0012 lr: 0.002
+iteration: 337000 loss: 0.0012 lr: 0.002
+iteration: 338000 loss: 0.0012 lr: 0.002
+iteration: 339000 loss: 0.0012 lr: 0.002
+iteration: 340000 loss: 0.0012 lr: 0.002
+iteration: 341000 loss: 0.0012 lr: 0.002
+iteration: 342000 loss: 0.0012 lr: 0.002
+iteration: 343000 loss: 0.0012 lr: 0.002
+iteration: 344000 loss: 0.0013 lr: 0.002
+iteration: 345000 loss: 0.0013 lr: 0.002
+iteration: 346000 loss: 0.0013 lr: 0.002
+iteration: 347000 loss: 0.0013 lr: 0.002
+iteration: 348000 loss: 0.0013 lr: 0.002
+iteration: 349000 loss: 0.0012 lr: 0.002
+iteration: 350000 loss: 0.0012 lr: 0.002
+INFO:tensorflow:./snapshot-350000 is not in all_model_checkpoint_paths. Manually adding it.
+./snapshot-350000 is not in all_model_checkpoint_paths. Manually adding it.
+iteration: 351000 loss: 0.0013 lr: 0.002
+iteration: 352000 loss: 0.0012 lr: 0.002
+iteration: 353000 loss: 0.0012 lr: 0.002
+iteration: 354000 loss: 0.0013 lr: 0.002
+iteration: 355000 loss: 0.0013 lr: 0.002
+iteration: 356000 loss: 0.0012 lr: 0.002
+iteration: 357000 loss: 0.0013 lr: 0.002
+iteration: 358000 loss: 0.0012 lr: 0.002
+iteration: 359000 loss: 0.0012 lr: 0.002
+iteration: 360000 loss: 0.0012 lr: 0.002
+iteration: 361000 loss: 0.0012 lr: 0.002
+iteration: 362000 loss: 0.0012 lr: 0.002
+iteration: 363000 loss: 0.0013 lr: 0.002
+iteration: 364000 loss: 0.0012 lr: 0.002
+iteration: 365000 loss: 0.0012 lr: 0.002
+iteration: 366000 loss: 0.0013 lr: 0.002
+iteration: 367000 loss: 0.0012 lr: 0.002
+iteration: 368000 loss: 0.0012 lr: 0.002
+iteration: 369000 loss: 0.0012 lr: 0.002
+iteration: 370000 loss: 0.0013 lr: 0.002
+iteration: 371000 loss: 0.0012 lr: 0.002
+iteration: 372000 loss: 0.0012 lr: 0.002
+iteration: 373000 loss: 0.0012 lr: 0.002
+iteration: 374000 loss: 0.0012 lr: 0.002
+iteration: 375000 loss: 0.0012 lr: 0.002
+iteration: 376000 loss: 0.0012 lr: 0.002
+iteration: 377000 loss: 0.0013 lr: 0.002
+iteration: 378000 loss: 0.0012 lr: 0.002
+iteration: 379000 loss: 0.0012 lr: 0.002
+iteration: 380000 loss: 0.0012 lr: 0.002
+iteration: 381000 loss: 0.0013 lr: 0.002
+iteration: 382000 loss: 0.0012 lr: 0.002
+iteration: 383000 loss: 0.0012 lr: 0.002
+iteration: 384000 loss: 0.0012 lr: 0.002
+iteration: 385000 loss: 0.0013 lr: 0.002
+iteration: 386000 loss: 0.0012 lr: 0.002
+iteration: 387000 loss: 0.0012 lr: 0.002
+iteration: 388000 loss: 0.0011 lr: 0.002
+iteration: 389000 loss: 0.0012 lr: 0.002
+iteration: 390000 loss: 0.0012 lr: 0.002
+iteration: 391000 loss: 0.0012 lr: 0.002
+iteration: 392000 loss: 0.0012 lr: 0.002
+iteration: 393000 loss: 0.0012 lr: 0.002
+iteration: 394000 loss: 0.0012 lr: 0.002
+iteration: 395000 loss: 0.0012 lr: 0.002
+iteration: 396000 loss: 0.0012 lr: 0.002
+iteration: 397000 loss: 0.0012 lr: 0.002
+iteration: 398000 loss: 0.0012 lr: 0.002
+iteration: 399000 loss: 0.0013 lr: 0.002
+iteration: 400000 loss: 0.0012 lr: 0.002
+INFO:tensorflow:./snapshot-400000 is not in all_model_checkpoint_paths. Manually adding it.
+./snapshot-400000 is not in all_model_checkpoint_paths. Manually adding it.
+iteration: 401000 loss: 0.0012 lr: 0.002
+iteration: 402000 loss: 0.0012 lr: 0.002
+iteration: 403000 loss: 0.0012 lr: 0.002
+iteration: 404000 loss: 0.0012 lr: 0.002
+iteration: 405000 loss: 0.0012 lr: 0.002
+iteration: 406000 loss: 0.0012 lr: 0.002
+iteration: 407000 loss: 0.0012 lr: 0.002
+iteration: 408000 loss: 0.0012 lr: 0.002
+iteration: 409000 loss: 0.0011 lr: 0.002
+iteration: 410000 loss: 0.0012 lr: 0.002
+iteration: 411000 loss: 0.0012 lr: 0.002
+iteration: 412000 loss: 0.0012 lr: 0.002
+iteration: 413000 loss: 0.0012 lr: 0.002
+iteration: 414000 loss: 0.0012 lr: 0.002
+iteration: 415000 loss: 0.0011 lr: 0.002
+iteration: 416000 loss: 0.0012 lr: 0.002
+iteration: 417000 loss: 0.0013 lr: 0.002
+iteration: 418000 loss: 0.0012 lr: 0.002
+iteration: 419000 loss: 0.0011 lr: 0.002
+iteration: 420000 loss: 0.0012 lr: 0.002
+iteration: 421000 loss: 0.0012 lr: 0.002
+iteration: 422000 loss: 0.0012 lr: 0.002
+iteration: 423000 loss: 0.0012 lr: 0.002
+iteration: 424000 loss: 0.0011 lr: 0.002
+iteration: 425000 loss: 0.0012 lr: 0.002
+iteration: 426000 loss: 0.0012 lr: 0.002
+iteration: 427000 loss: 0.0012 lr: 0.002
+iteration: 428000 loss: 0.0012 lr: 0.002
+iteration: 429000 loss: 0.0012 lr: 0.002
+iteration: 430000 loss: 0.0012 lr: 0.002
+iteration: 431000 loss: 0.0012 lr: 0.001
+iteration: 432000 loss: 0.0011 lr: 0.001
+iteration: 433000 loss: 0.0011 lr: 0.001
+iteration: 434000 loss: 0.0010 lr: 0.001
+iteration: 435000 loss: 0.0011 lr: 0.001
+iteration: 436000 loss: 0.0011 lr: 0.001
+iteration: 437000 loss: 0.0011 lr: 0.001
+iteration: 438000 loss: 0.0011 lr: 0.001
+iteration: 439000 loss: 0.0011 lr: 0.001
+iteration: 440000 loss: 0.0010 lr: 0.001
+iteration: 441000 loss: 0.0011 lr: 0.001
+iteration: 442000 loss: 0.0011 lr: 0.001
+iteration: 443000 loss: 0.0011 lr: 0.001
+iteration: 444000 loss: 0.0011 lr: 0.001
+iteration: 445000 loss: 0.0011 lr: 0.001
+iteration: 446000 loss: 0.0011 lr: 0.001
+iteration: 447000 loss: 0.0011 lr: 0.001
+iteration: 448000 loss: 0.0011 lr: 0.001
+iteration: 449000 loss: 0.0010 lr: 0.001
+iteration: 450000 loss: 0.0011 lr: 0.001
+INFO:tensorflow:./snapshot-450000 is not in all_model_checkpoint_paths. Manually adding it.
+./snapshot-450000 is not in all_model_checkpoint_paths. Manually adding it.
+iteration: 451000 loss: 0.0011 lr: 0.001
+iteration: 452000 loss: 0.0010 lr: 0.001
+iteration: 453000 loss: 0.0011 lr: 0.001
+iteration: 454000 loss: 0.0010 lr: 0.001
+iteration: 455000 loss: 0.0010 lr: 0.001

@@ -4,7 +4,7 @@ all_joints_names: [knee]
 dataset: ../../UnaugmentedDataSet_standingMay03/standing_camila70shuffle1.mat
 display_iters: 1000
 global_scale: 0.8
-init_weights: ../../pretrained/resnet_v1_50.ckpt
+init_weights: ../../pretrained/resnet_v1_50.ckpt #snapshot-130000
 intermediate_supervision: false
 intermediate_supervision_layer: 12
 location_refinement: true
@@ -13,7 +13,7 @@ locref_loss_weight: 0.05
 locref_stdev: 7.2801
 max_input_size: 1000
 mirror: false
-multi_step:
+multi_step: 
 - [0.005, 10000]
 - [0.02, 430000]
 - [0.002, 730000]
@@ -21,6 +21,6 @@ multi_step:
 net_type: resnet_50
 num_joints: 1
 pos_dist_thresh: 17
-save_iters: 50000
+save_iters: 1000 #50000
 scale_jitter_lo: 0.5
 scale_jitter_up: 1.5
