@@ -9,7 +9,7 @@
 
 ########################################
 # Step 1:
-Task = 'pavel'#'standing'#'moving'#'reaching'  'combined'
+Task = 'tanya' # 'pavel'#'standing'#'moving'#'reaching'  'combined'
 ########################################
 
 # Filename and path to behavioral video:
@@ -40,7 +40,7 @@ portion = 1
 bodyparts =['tail tip', 'back right shoulder', 'tail start', 'front left knee', 'front left foot', 'chin', 'back right knee', 'left eye', 'front right ankle', 'nosetip', 'front right shoulder', 'front left shoulder', 'back left foot', 'right eye', 'back right ankle', 'left ear', 'front right knee', 'front right foot', 'back left shoulder', 'neck', 'front left ankle', 'back right foot', 'back left knee', 'right ear', 'back left ankle']
 
 # annotator in *.csv file
-Scorers = ['camila']  # who is labeling?
+Scorers = ['AMT']  # who is labeling?
 
 # When importing the images and the labels in the csv/xls files should be in the same order!
 # During labeling in Fiji one can thus (for occluded body parts) click in the origin of the image 
@@ -52,11 +52,11 @@ invisibleboundary=10 # If labels are closer to origin than this number they are 
 # Step 3:
 ########################################
 
-date = 'May03'#''May18'
-scorer = 'camila'
+date = 'May24' #'May03'#''May18'
+scorer = 'AMT' #'camila'
 
 # Userparameters for training set. Other parameters can be set in pose_cfg.yaml
-Shuffles = [1]# range(3) #[1]  # Ids for shuffles, i.e. range(5) for 5 shuffles
+Shuffles = range(3) #[1]  # Ids for shuffles, i.e. range(5) for 5 shuffles
 TrainingFraction = [0.70]  # Fraction of labeled images used for training
 
 # Which resnet to use
