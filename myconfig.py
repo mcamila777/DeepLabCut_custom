@@ -37,7 +37,7 @@ portion = 1
 
 #bodyparts = ["knee"] #["hand", "Finger1", "Finger2",  "Joystick"]  # Exact sequence of labels as were put by
 
-bodyparts =['tail tip', 'back right shoulder', 'tail start', 'front left knee', 'front left foot', 'chin', 'back right knee', 'left eye', 'front right ankle', 'nosetip', 'front right shoulder', 'front left shoulder', 'back left foot', 'right eye', 'back right ankle', 'left ear', 'front right knee', 'front right foot', 'back left shoulder', 'neck', 'front left ankle', 'back right foot', 'back left knee', 'right ear', 'back left ankle']
+bodyparts = ['tail tip', 'back right shoulder', 'tail start', 'front left knee', 'front left foot', 'chin', 'back right knee', 'left eye', 'front right ankle', 'nosetip', 'front right shoulder', 'front left shoulder', 'back left foot', 'right eye', 'back right ankle', 'left ear', 'front right knee', 'front right foot', 'back left shoulder', 'neck', 'front left ankle', 'back right foot', 'back left knee', 'right ear', 'back left ankle']
 
 # annotator in *.csv file
 Scorers = ['AMT']  # who is labeling?
