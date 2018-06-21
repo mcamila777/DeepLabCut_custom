@@ -46,6 +46,7 @@ max_input_size: 1000
 
 # Learning rate schedule for the SGD optimiser. 
 multi_step:
+<<<<<<< HEAD
 #- [0.005, 10000]
 #- [0.002, 430000] #deacrease ?
 #- [0.001, 730000]
@@ -53,12 +54,20 @@ multi_step:
 #orogiginal values
 - [0.005, 10000]
 - [0.02, 430000] # original
+=======
+- [0.005, 10000]
+- [0.02, 430000]
+>>>>>>> public/master
 - [0.002, 730000]
 - [0.001, 1030000]
 
 # How often display loss
 display_iters: 1000
 # How often to save training snapshot
+<<<<<<< HEAD
 save_iters: 1000 #50000 
+=======
+save_iters: 50000
+>>>>>>> public/master
 
 

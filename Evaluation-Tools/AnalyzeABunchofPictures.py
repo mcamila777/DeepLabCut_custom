@@ -1,12 +1,15 @@
 """
 DeepLabCut Toolbox
 https://github.com/AlexEMG/DeepLabCut
+
 A Mathis, alexander.mathis@bethgelab.org
 M Mathis, mackenzie@post.harvard.edu
+
 This script analyzes videos based on a trained network.
 You need tensorflow for evaluation. Run by:
     
 CUDA_VISIBLE_DEVICES=0 python3 AnalyzeABunchofPictures.py
+
 This script loops over a folder containing tiff stacks and analyses them stack by stack. By popular demand of the Woolf lab at HMS.
 This can also be adapted to load different types of images. 
 """
@@ -153,4 +156,3 @@ for tiffstack in videos:
         with open(dataname.split('.')[0] + 'includingmetadata.pickle',
                   'wb') as f:
             pickle.dump(metadata, f, pickle.HIGHEST_PROTOCOL)
-

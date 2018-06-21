@@ -138,8 +138,14 @@ for shuffle in Shuffles:
                     )  # x coordinate within!
 
             H['joints'] = np.array(joints, dtype=int)
+<<<<<<< HEAD
 
             data.append(H)
+=======
+            if np.size(joints)>0: #exclude images without labels
+                    data.append(H)
+            
+>>>>>>> public/master
 
         with open(fn + '.pickle', 'wb') as f:
             # Pickle the 'data' dictionary using the highest protocol available.
