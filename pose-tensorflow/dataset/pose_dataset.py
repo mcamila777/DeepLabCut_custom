@@ -74,14 +74,7 @@ class PoseDataset:
             item.im_path = sample[0][0]
             item.im_size = sample[1][0]
             if len(sample) >= 3:
-<<<<<<< HEAD
-		#print('sample: ' + str(sample))
                 joints = sample[2][0][0]
-		#print('joints: ' + str(joints))
-
-=======
-                joints = sample[2][0][0]
->>>>>>> public/master
                 joint_id = joints[:, 0]
                 # make sure joint ids are 0-indexed
                 if joint_id.size != 0:
@@ -264,22 +257,11 @@ class PoseDataset:
                 # don't loop over entire heatmap, but just relevant locations
                 j_x_sm = round((j_x - half_stride) / stride)
                 j_y_sm = round((j_y - half_stride) / stride)
-<<<<<<< HEAD
-                min_x = int(round(max(j_x_sm - dist_thresh - 1, 0)))
-                max_x = int(round(min(j_x_sm + dist_thresh + 1, width - 1)))
-                min_y = int(round(max(j_y_sm - dist_thresh - 1, 0)))
-                max_y = int(round(min(j_y_sm + dist_thresh + 1, height - 1)))
-
-
-                #print ('min_y' + str(min_y))
-		#print ('max_y' + str(max_y))
-=======
                 min_x = round(max(j_x_sm - dist_thresh - 1, 0))
                 max_x = round(min(j_x_sm + dist_thresh + 1, width - 1))
                 min_y = round(max(j_y_sm - dist_thresh - 1, 0))
                 max_y = round(min(j_y_sm + dist_thresh + 1, height - 1))
 
->>>>>>> public/master
                 for j in range(min_y, max_y + 1):  # range(height):
                     pt_y = j * stride + half_stride
                     for i in range(min_x, max_x + 1):  # range(width):

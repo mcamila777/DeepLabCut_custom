@@ -8,11 +8,9 @@ from config import load_config
 from dataset.factory import create as create_dataset
 from nnet.net_factory import pose_net
 from nnet.pose_net import get_batch_spec
-#<<<<<<< HEAD
-from util.logging_m import setup_logging #logging_m
-#=======
-#from util.logging import setup_logging
-#>>>>>>> public/master
+
+from util.logging import setup_logging
+
 
 
 class LearningRate(object):
@@ -95,11 +93,8 @@ def train():
 
     variables_to_restore = slim.get_variables_to_restore(include=["resnet_v1"])
     restorer = tf.train.Saver(variables_to_restore)
-#<<<<<<< HEAD
+
     saver = tf.train.Saver(max_to_keep=None) #(max_to_keep=5)
-#=======
-#    saver = tf.train.Saver(max_to_keep=5)
-#>>>>>>> public/master
 
     sess = tf.Session()
 

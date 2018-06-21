@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Camila ignore:
 
 UnaugmentedData*
@@ -8,8 +7,6 @@ Evaluation-Tools/Results/*
 *.ps011
 
 
-=======
->>>>>>> public/master
 # Tensorflow checkpoints
 *.ckpt
 snapshot-*
