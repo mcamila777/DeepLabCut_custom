@@ -6,7 +6,6 @@ from nnet.net_factory import pose_net
 
 
 def setup_pose_prediction(cfg):
-    tf.reset_default_graph() # NEW LINE
     inputs = tf.placeholder(tf.float32, shape=[cfg.batch_size   , None, None, 3])
 
     net_heads = pose_net(cfg).test(inputs)
@@ -28,8 +27,8 @@ def setup_pose_prediction(cfg):
 
 
 def extract_cnn_output(outputs_np, cfg):
-    scmap = outputs_np[0]#['part_prob']
-    scmap = np.squeeze(scmap , axis=0) #, axis=0
+    scmap = outputs_np[0]
+    scmap = np.squeeze(scmap)
     locref = None
     if cfg.location_refinement:
         locref = np.squeeze(outputs_np[1])
