@@ -68,10 +68,10 @@ imagetype=".png" # image type of labeled frames
 # Step 3: Check labels / makes plots
 ########################################
 
-colormap = 'cool' #set color map, i.e. viridis, cool, hsv
+colormap = 'hsv' #'cool' #set color map, i.e. viridis, cool, hsv
 scale = 1  # for plotting
 msize=10   #size of labels
-alphavalue =.6 #transparency of labels
+alphavalue = .8 #.6 #transparency of labels
 
 ########################################
 # Step 4: Generate Training Files 
