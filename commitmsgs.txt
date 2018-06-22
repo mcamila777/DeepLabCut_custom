@@ -1,0 +1,312 @@
+commit d3099f931bed9ad46a4a8637b399d04f387d616d
+Merge: 9bf131c 17beacd
+Author: Camila Alvarez <camilaalvarez777@gmail.com>
+Date:   Thu Jun 21 21:54:19 2018 +0200
+
+    Merge remote-tracking branch 'public/master'
+
+commit 9bf131c58e0e802a68a853fe29859d6c7fd0778a
+Merge: 8d18e06 28f09f4
+Author: Camila Alvarez <camilaalvarez777@gmail.com>
+Date:   Thu Jun 21 21:53:24 2018 +0200
+
+    Clean merge
+
+commit 28f09f4b0e491e1e7d9a3609d2da7df582be34e8
+Merge: ca884e5 7e96c0f
+Author: Camila Alvarez <camilaalvarez777@gmail.com>
+Date:   Thu Jun 21 21:43:06 2018 +0200
+
+    Merge remote-tracking branch 'public/master' into my_old_master
+
+commit 8d18e06c231d206bdb35e38c580fbf7a870e5766
+Merge: ca884e5 7e96c0f
+Author: Camila Alvarez <calvarez2@ps011.is.localnet>
+Date:   Thu Jun 21 20:15:14 2018 +0200
+
+    changes
+
+commit 17beacde3a837803ec34d9f6118e11237c4cb910
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Tue Jun 19 18:04:20 2018 -0400
+
+    added variable for colormap
+
+commit ca884e50b8de95e2adf2156cc19090b3addd8c46
+Author: Camila Alvarez <calvarez2@ps011.is.localnet>
+Date:   Tue Jun 19 16:01:13 2018 +0200
+
+    Some intermediate changes for pulling public remote
+
+commit 7e96c0fbb4d82c56f05c76e08c55d3947a48db9a
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Mon Jun 18 18:44:25 2018 -0400
+
+    color sequence for labels matches order from myconfig
+
+commit 2d46f669b2f2c4b9aec5afb79fae867b219c9042
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Mon Jun 18 14:12:37 2018 -0400
+
+    Update myconfig_analysis.py
+
+commit c1319c435deeb40467bb54752388ed8a076e90ad
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Sun Jun 17 20:35:00 2018 -0400
+
+    Added videos folder
+
+commit a902e16f9f8bf952da31e236f5a84fd41758469c
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Sun Jun 17 20:20:14 2018 -0400
+
+    Update README.md
+
+commit aab150f009a0a59db9b7911e2e674fced9a3ad24
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Sun Jun 17 20:15:08 2018 -0400
+
+    Evaluation loops now work for many tf versions, faster videomaking code, cosmetic changes
+
+commit 7ded70f495368729e7bd711368978c0b1d6a86bf
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Sun Jun 17 19:08:15 2018 -0400
+
+    minor cosmetics
+
+commit de2e6f2f45ec0c2abaf688be000774ad5f85c318
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Sat Jun 16 16:07:01 2018 -0400
+
+    Update README.md
+
+commit 19bc5d8065a39e64e6c7080e85d63de823225469
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Fri Jun 15 18:28:52 2018 -0400
+
+    added wiki page for a quick run guide
+
+commit 876f071a62747d51477b16a0d61fb7ca754c1610
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Fri Jun 15 17:24:50 2018 -0400
+
+    added a quick run guide
+
+commit e36ff10adb0688dcb4726b79c400604d422c31b7
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Fri Jun 15 12:09:36 2018 -0400
+
+    Update README.md
+
+commit 97ab76651736e514154fd72564dbf17e2ef6905d
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Fri Jun 15 11:41:48 2018 -0400
+
+    Included flat to store pose data as csv file
+
+commit 87814d3fbf63a9e95108f8d6558855d73fff89c1
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Tue Jun 12 21:07:44 2018 -0400
+
+    Some cleanup
+
+commit 63e17e0110515b585658df40b82844c22ed25e83
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Sat Jun 9 20:06:29 2018 -0400
+
+    symbols in plot were wrong in plot were wrong
+
+commit 957a80e53577daa9e36dd96f6d0a798a63b15344
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Sat Jun 9 15:54:10 2018 -0400
+
+    Update README.md
+
+commit b139c45b0a218dd46064a8cf060f20f39936fd45
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Tue May 29 18:29:26 2018 -0400
+
+    Added functionality for plotting labeled train & test images and evaluate errors only for confident predictions
+
+commit 4efa17d01a8ca969070cf07a243e64dfa801c396
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Mon May 28 19:12:43 2018 -0400
+
+    Exclude images without labels in data generation
+
+commit 56a4e3f6b3c53ea13d8bb59e8faf35c34b587b70
+Author: Camila Alvarez <calvarez2@ps011.is.localnet>
+Date:   Fri May 25 15:56:22 2018 +0200
+
+    improved evaluation
+
+commit 24177f0a8ebb3117909618e145ab31a8392464a5
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Thu May 24 18:38:01 2018 -0400
+
+    Update README.md
+
+commit 5454c2b8038c411d897c8f0349cd608fd5a093e6
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Thu May 24 18:26:01 2018 -0400
+
+    Update Step2_ConvertingLabels2DataFrame.py
+
+commit 6c3ea13d817f9c05ff182da41769ef0328326743
+Author: Camila Alvarez <calvarez2@ps011.is.localnet>
+Date:   Wed May 23 23:07:05 2018 +0200
+
+    Updated script to transform pickle data into deepLab format
+
+commit c9f045911bce2b36064b854300d2a105493c8ee6
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Tue May 22 15:21:07 2018 -0400
+
+    Set theme jekyll-theme-minimal
+
+commit 87f85c854714f4f003c20cbf3be677b6151ed50e
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Fri May 18 21:23:41 2018 -0400
+
+    videotype also for making videos (not just analyzing...)
+
+commit 432fc9052716ddbb6341c57d43c9fab36581a256
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Fri May 18 20:54:14 2018 -0400
+
+    Bug in Step2 when using a single csv file fixed. Otherwise cosmetics.
+
+commit 1be4411015fccbd60e9c9d39d7e4ee8f2ad9e607
+Author: Camila Alvarez <calvarez2@ps011.is.localnet>
+Date:   Wed May 16 20:00:53 2018 +0200
+
+    created error graph for all snapshots
+
+commit d8625517eec18613b37870cb9a605bce5aa8031f
+Author: Camila Alvarez <calvarez2@ps011.is.localnet>
+Date:   Wed May 16 17:00:19 2018 +0200
+
+    Updated autodetection of separator for loading csv files
+
+commit 7eea7be307b9142ac3c1e2e074b84c68c296a011
+Author: Camila Alvarez <calvarez2@ps011.is.localnet>
+Date:   Wed May 16 15:56:24 2018 +0200
+
+    added gitignore
+
+commit 482ed6668cc350811bd56d081ece4315676aa118
+Author: Camila Alvarez <calvarez2@ps011.is.localnet>
+Date:   Wed May 16 15:42:33 2018 +0200
+
+    sec commit
+
+commit 6904a31bab7423953e148ae06cac0ed00c21aa86
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Tue May 15 20:24:04 2018 -0400
+
+    Updated autodetection of separator for loading csv files, and tiff iterator for analysis.
+
+commit fe9ae19195d7c6b75b4ff831de1a0d8d88d1f3fe
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Tue May 8 17:18:37 2018 -0400
+
+    Update README.md
+
+commit e52df3024db5a2e391cda30eab2e81be6cb3fecc
+Merge: 70f5c65 ba5463e
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Tue May 8 17:15:24 2018 -0400
+
+    Merge https://github.com/AlexEMG/DeepLabCut
+
+commit 70f5c65724ce3a0822e28caf6c35204f62ebc169
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Tue May 8 17:15:03 2018 -0400
+
+    Updated multibodypartsplitting a la sneakers-the-rat
+
+commit ba5463e74515841e6c6307a08e2ecb3c58fb8cda
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Tue May 8 15:17:56 2018 -0400
+
+    Speeding up line 93.
+    
+    Thanks to @sneakers-the-rat
+
+commit 3628d7ba36e09fb4e870342f83249392275ffaec
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Mon May 7 14:51:34 2018 -0400
+
+    Updated evaluation scripts to allow evaluation of multiple snapshots & included cropping variable for frame selection.
+
+commit 83990698648f51066cca4fbcb2a6df382bb4e50d
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Sat Apr 21 17:05:03 2018 -0400
+
+    Update README.md
+
+commit b39312160c9c40e5b01b9a9d9ab91b89269887c3
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Fri Apr 20 14:58:09 2018 -0400
+
+    added more comments
+
+commit 75d4e2f05ee4d823ad53cdbba540a19294586ff2
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Fri Apr 20 14:06:35 2018 -0400
+
+    Updated step2 notebook and made invisibleboundary a variable in myconfig
+
+commit b2056b51a9c368ec3c268084e6ca098d52e96682
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Tue Apr 17 14:56:15 2018 -0400
+
+    Update README.md
+
+commit 12debed108ddb6c6b38965d4740d7b804fc59c98
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Mon Apr 16 14:09:20 2018 -0400
+
+    Update Step2_ConvertingLabels2DataFrame_demo.ipynb
+
+commit 830dd43a332a6c8a43944c6073dc247ab8908ce7
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Mon Apr 16 14:04:46 2018 -0400
+
+    Update Step2_ConvertingLabels2DataFrame_demo.ipynb
+
+commit ec28a65c12af5c4d0de82015cbc4aad33cd5a444
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Mon Apr 16 14:02:09 2018 -0400
+
+    Fixed removing of invisible body parts.
+
+commit 2b373cfb76d87baad29ed4b658237c0679413cf1
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Thu Apr 12 14:46:52 2018 -0400
+
+    Update README.md
+
+commit 21c93a6a27c19257717455d2e728f78935e770ba
+Author: Mackenzie Mathis <mathis@rowland.harvard.edu>
+Date:   Thu Apr 12 13:14:20 2018 -0400
+
+    Update README.md
+
+commit 2b5f648b7cefa062a7d27555f7dc3e15b1d21729
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Wed Apr 11 16:51:40 2018 -0400
+
+    Update README.md
+
+commit 0a62d7c3dae1a6701a02584c3269449ea831f80e
+Author: Alexander Mathis <amathis@fas.harvard.edu>
+Date:   Tue Apr 10 20:11:09 2018 -0400
+
+    Added reference to our preprint.
+
+commit bc747f0c113d6716ff0bc9302c19e38924a74364
+Author: AlexEMG <amathis@fas.harvard.edu>
+Date:   Tue Apr 10 17:21:14 2018 -0400
+
+    Hello world
