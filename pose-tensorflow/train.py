@@ -9,7 +9,8 @@ from dataset.factory import create as create_dataset
 from nnet.net_factory import pose_net
 from nnet.pose_net import get_batch_spec
 
-from util.logging import setup_logging
+from util.logging_m import setup_logging #logging_m
+
 
 
 
