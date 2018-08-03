@@ -1,4 +1,4 @@
-2018-08-03 17:26:09 Config:
+2018-08-03 17:36:16 Config:
 {'all_joints': [[0],
                 [1],
                 [2],
@@ -91,10 +91,9 @@
  'weigh_only_present_joints': False,
  'weigh_part_predictions': False,
  'weight_decay': 0.0001}
-2018-08-03 17:26:09 From /is/ps2/calvarez2/DeepLabCut/pose-tensorflow/nnet/pose_net.py:52: calling resnet_arg_scope (from tensorflow.contrib.slim.python.slim.nets.resnet_utils) with is_training is deprecated and will be removed after 2017-08-01.
+2018-08-03 17:36:16 From /is/ps2/calvarez2/DeepLabCut/pose-tensorflow/nnet/pose_net.py:52: calling resnet_arg_scope (from tensorflow.contrib.slim.python.slim.nets.resnet_utils) with is_training is deprecated and will be removed after 2017-08-01.
 Instructions for updating:
 Pass is_training directly to the network instead of the arg_scope.
-2018-08-03 17:26:10 logits.dtype=<dtype: 'float32'>.
-2018-08-03 17:26:10 multi_class_labels.dtype=<dtype: 'float32'>.
-2018-08-03 17:26:10 losses.dtype=<dtype: 'float32'>.
-2018-08-03 17:26:19 Restoring parameters from ../../pretrained/resnet_v1_50.ckpt
+2018-08-03 17:36:17 logits.dtype=<dtype: 'float32'>.
+2018-08-03 17:36:17 multi_class_labels.dtype=<dtype: 'float32'>.
+2018-08-03 17:36:17 losses.dtype=<dtype: 'float32'>.

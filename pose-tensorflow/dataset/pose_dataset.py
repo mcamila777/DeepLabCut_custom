@@ -257,10 +257,14 @@ class PoseDataset:
                 # don't loop over entire heatmap, but just relevant locations
                 j_x_sm = round((j_x - half_stride) / stride)
                 j_y_sm = round((j_y - half_stride) / stride)
-                min_x = round(max(j_x_sm - dist_thresh - 1, 0))
-                max_x = round(min(j_x_sm + dist_thresh + 1, width - 1))
-                min_y = round(max(j_y_sm - dist_thresh - 1, 0))
-                max_y = round(min(j_y_sm + dist_thresh + 1, height - 1))
+                min_x = int(round(max(j_x_sm - dist_thresh - 1, 0)))
+                max_x = int(round(min(j_x_sm + dist_thresh + 1, width - 1)))
+                min_y = int(round(max(j_y_sm - dist_thresh - 1, 0)))
+                max_y = int(round(min(j_y_sm + dist_thresh + 1, height - 1)))
+
+
+                #print ('min_y' + str(min_y))
+		#print ('max_y' + str(max_y))
 
                 for j in range(min_y, max_y + 1):  # range(height):
                     pt_y = j * stride + half_stride
