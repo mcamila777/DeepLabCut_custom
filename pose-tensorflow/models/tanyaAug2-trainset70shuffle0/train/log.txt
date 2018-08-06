@@ -1,4 +1,4 @@
-2018-08-03 17:36:16 Config:
+2018-08-03 17:44:05 Config:
 {'all_joints': [[0],
                 [1],
                 [2],
@@ -91,9 +91,59 @@
  'weigh_only_present_joints': False,
  'weigh_part_predictions': False,
  'weight_decay': 0.0001}
-2018-08-03 17:36:16 From /is/ps2/calvarez2/DeepLabCut/pose-tensorflow/nnet/pose_net.py:52: calling resnet_arg_scope (from tensorflow.contrib.slim.python.slim.nets.resnet_utils) with is_training is deprecated and will be removed after 2017-08-01.
+2018-08-03 17:44:05 From /is/ps2/calvarez2/DeepLabCut/pose-tensorflow/nnet/pose_net.py:52: calling resnet_arg_scope (from tensorflow.contrib.slim.python.slim.nets.resnet_utils) with is_training is deprecated and will be removed after 2017-08-01.
 Instructions for updating:
 Pass is_training directly to the network instead of the arg_scope.
-2018-08-03 17:36:17 logits.dtype=<dtype: 'float32'>.
-2018-08-03 17:36:17 multi_class_labels.dtype=<dtype: 'float32'>.
-2018-08-03 17:36:17 losses.dtype=<dtype: 'float32'>.
+2018-08-03 17:44:06 logits.dtype=<dtype: 'float32'>.
+2018-08-03 17:44:06 multi_class_labels.dtype=<dtype: 'float32'>.
+2018-08-03 17:44:06 losses.dtype=<dtype: 'float32'>.
+2018-08-03 17:44:15 Restoring parameters from ../../pretrained/resnet_v1_50.ckpt
+2018-08-03 17:44:19 iteration: 0 loss: 0.0008 lr: 0.005
+2018-08-03 17:46:37 iteration: 1000 loss: 0.0363 lr: 0.005
+2018-08-03 17:46:38 ./snapshot-1000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 17:48:57 iteration: 2000 loss: 0.0255 lr: 0.005
+2018-08-03 17:48:58 ./snapshot-2000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 17:51:25 iteration: 3000 loss: 0.0236 lr: 0.005
+2018-08-03 17:51:26 ./snapshot-3000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 17:53:51 iteration: 4000 loss: 0.0218 lr: 0.005
+2018-08-03 17:53:52 ./snapshot-4000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 17:56:16 iteration: 5000 loss: 0.0206 lr: 0.005
+2018-08-03 17:56:17 ./snapshot-5000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 17:58:42 iteration: 6000 loss: 0.0197 lr: 0.005
+2018-08-03 17:58:43 ./snapshot-6000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:01:04 iteration: 7000 loss: 0.0188 lr: 0.005
+2018-08-03 18:01:05 ./snapshot-7000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:03:29 iteration: 8000 loss: 0.0184 lr: 0.005
+2018-08-03 18:03:30 ./snapshot-8000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:05:50 iteration: 9000 loss: 0.0176 lr: 0.005
+2018-08-03 18:05:51 ./snapshot-9000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:08:16 iteration: 10000 loss: 0.0173 lr: 0.005
+2018-08-03 18:08:17 ./snapshot-10000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:10:45 iteration: 11000 loss: 0.0188 lr: 0.02
+2018-08-03 18:10:46 ./snapshot-11000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:13:10 iteration: 12000 loss: 0.0171 lr: 0.02
+2018-08-03 18:13:11 ./snapshot-12000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:15:34 iteration: 13000 loss: 0.0160 lr: 0.02
+2018-08-03 18:15:35 ./snapshot-13000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:18:01 iteration: 14000 loss: 0.0152 lr: 0.02
+2018-08-03 18:18:02 ./snapshot-14000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:20:22 iteration: 15000 loss: 0.0141 lr: 0.02
+2018-08-03 18:20:23 ./snapshot-15000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:22:46 iteration: 16000 loss: 0.0136 lr: 0.02
+2018-08-03 18:22:47 ./snapshot-16000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:25:11 iteration: 17000 loss: 0.0130 lr: 0.02
+2018-08-03 18:25:12 ./snapshot-17000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:27:35 iteration: 18000 loss: 0.0124 lr: 0.02
+2018-08-03 18:27:36 ./snapshot-18000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:30:00 iteration: 19000 loss: 0.0118 lr: 0.02
+2018-08-03 18:30:01 ./snapshot-19000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:32:20 iteration: 20000 loss: 0.0112 lr: 0.02
+2018-08-03 18:32:21 ./snapshot-20000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:34:44 iteration: 21000 loss: 0.0108 lr: 0.02
+2018-08-03 18:34:45 ./snapshot-21000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:37:06 iteration: 22000 loss: 0.0103 lr: 0.02
+2018-08-03 18:37:07 ./snapshot-22000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:39:32 iteration: 23000 loss: 0.0100 lr: 0.02
+2018-08-03 18:39:33 ./snapshot-23000 is not in all_model_checkpoint_paths. Manually adding it.
+2018-08-03 18:41:55 iteration: 24000 loss: 0.0095 lr: 0.02
+2018-08-03 18:41:56 ./snapshot-24000 is not in all_model_checkpoint_paths. Manually adding it.
