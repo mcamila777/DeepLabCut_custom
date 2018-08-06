@@ -6,6 +6,7 @@ from nnet.net_factory import pose_net
 
 
 def setup_pose_prediction(cfg):
+    tf.reset_default_graph() # NEW LINE: reset the graph for each new iteration of snapshots.
     inputs = tf.placeholder(tf.float32, shape=[cfg.batch_size   , None, None, 3])
 
     net_heads = pose_net(cfg).test(inputs)
