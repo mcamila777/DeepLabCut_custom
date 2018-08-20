@@ -79,11 +79,11 @@ alphavalue =.8 #transparency of labels
 # Step 4: Generate Training Files 
 ########################################
 
-date = 'Aug2' #'May24' #'May03'#''May18'
+date = 'May24' #'Aug2' #'May24' #'May03'#''May18'
 scorer = 'AMT' #'camila'
 
 # Userparameters for training set. Other parameters can be set in pose_cfg.yaml
-Shuffles = range(1)#range(3) #[1]  # Ids for shuffles, i.e. range(5) for 5 shuffles
+Shuffles = range(3) #[1]  # Ids for shuffles, i.e. range(5) for 5 shuffles
 TrainingFraction = [0.70]  # [0.95] # Fraction of labeled images used for training
 
 # Which resnet to use
