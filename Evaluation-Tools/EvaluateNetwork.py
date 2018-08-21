@@ -3,12 +3,9 @@ DeepLabCut Toolbox
 https://github.com/AlexEMG/DeepLabCut
 A Mathis, alexander.mathis@bethgelab.org
 M Mathis, mackenzie@post.harvard.edu
-
 This script evaluates a trained model at a particular state on the data set (images)
 and stores the results in a pandas dataframe.
-
 Script called from Step1_EvaluateModelonDataset.py
-
 """
 
 ####################################################
