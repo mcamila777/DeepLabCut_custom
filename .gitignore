@@ -5,6 +5,7 @@ Generating_a_Training_Set/data-*
 Generating_a_Training_Set/pavel_data
 Evaluation-Tools/Results/*
 *.ps011
+test_images/*
 
 
 # Tensorflow checkpoints
