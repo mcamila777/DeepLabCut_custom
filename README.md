@@ -1,5 +1,43 @@
 # DeepLabCut
 
+**Zebra keypoints - train**
+
+- Activate envoronmet:
+
+source ~/tensorflow-3.0/bin/activate
+(Doesn't work for tf 1.4)
+
+
+- Navigate to the folder containing the model to train, ex:
+
+-cd DeepLabCut/pose-tensorflow/models/standingMay03-trainset70shuffle1/
+
+-cd DeepLabCut/pose-tensorflow/models/standingMay18-trainset70shuffle1/train
+
+-cd pose-tensorflow/models/bounding_boxOct2-trainset70shuffle0/train
+
+- from there run the train file
+
+TF_CUDNN_USE_AUTOTUNE=0 CUDA_VISIBLE_DEVICES=0 python2.7  ../../../train.py
+
+
+**Evaluate network**
+
+- cd DeepLabCut/Evaluation-Tools/
+
+- CUDA_VISIBLE_DEVICES=0 python2.7 Step1_EvaluateModelonDataset.py  #to evaluate your model [needs TensorFlow]
+
+- python2.7 Step2_AnalysisofResults.py  #to compute test & train errors for your trained model
+
+
+
+
+
+
+
+
+------------------------------------------------------------
+
 A toolbox for markerless tracking of body parts of animals in lab settings performing various tasks, like [trail tracking](https://vnmurthylab.org/),  [reaching in mice](http://www.mousemotorlab.org/) and various Drosophila behaviors during egg-laying (see [Mathis et al.](https://arxiv.org/abs/1804.03142v1) for details). There is, however, nothing specific that makes the toolbox only applicable to these tasks and/or species. The toolbox has also already been successfully applied to [rats](http://www.mousemotorlab.org/deeplabcut), humans, various fish species, robots, and [race horses](http://www.mousemotorlab.org/deeplabcut).
 
 <p align="center">
