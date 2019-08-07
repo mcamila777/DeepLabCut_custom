@@ -2,6 +2,9 @@
 
 **Zebra keypoints - train**
 
+*config:* ptyhon 2.7 ; TF = 1.3.0  ---- cuda-8.0 ; cudnn-6.0-cu8.0
+
+
 - Activate envoronmet:
 
 source ~/tensorflow-3.0/bin/activate
