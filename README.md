@@ -32,6 +32,24 @@ TF_CUDNN_USE_AUTOTUNE=0 CUDA_VISIBLE_DEVICES=0 python2.7  ../../../train.py
 
 
 
+**PROCESS TO GET KEYPOINTS TO SMAL ALIGNMENT:**
+
+- From AMT:
+
+1. Paste pickle file in the directory: frankengeist/experiments/camila/smalr/data 
+2. Run file to change format from pickle to SMAL format: read_annotations_from_AMT.py 
+3. Copy the desired annotations from  annotations_AMT to frankengeist/experiments/camila/smalr/data/zebra_C/zebra_C_01/annotations folder 
+
+- From DeepLabCut Network:
+
+1. Extract .h5 file with the pandas data of the net output. Go to: DeepLabCut/Evaluation-Tools/step2.ipynb → Store samples section 
+2. Then,  go to and run frankengeist/experiments/camila/smalr/data/read_annotations_from_net.py . check where the annotations are stored (annotations_NET folder inside DeeplabCut) 
+3. Copy the desired annotations on frankengeist/experiments/camila/smalr/data/zebra_C/zebra_C_01/annotations folder  
+
+- FROM AMT TO DEEP LAB CUT FORMAT
+
+1. Go to zebra_project/notebooks_camila/readingAMT_annotations.ipynb  section: ## Store mean/median per image, per body part → ## Create dictionaries   and store the file with the mean and/or media of the keypoints among the different workers  
+2. Go to DeepLabCut/Generating_a_Training_Set/convertingLabelsFromat2Xls.ipynb and run the section ## From the calculated  mean/median of single folder with images (from multiple workers). The keypoints will be stored in the desired basefolder directory
 
 
 
