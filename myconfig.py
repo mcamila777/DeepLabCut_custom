@@ -13,7 +13,7 @@
 ########################################
 
 # Step 1:
-Task = 'tanya' # 'pavel'#'standing'#'moving'#'reaching'  'combined'
+Task = 'bounding_box' # 'tanya' # 'pavel'#'standing'#'moving'#'reaching'  'combined'
 ########################################
 
 # Filename and path to behavioral video:
@@ -44,7 +44,9 @@ portion = 1
 
 #bodyparts = ["knee"] #["hand", "Finger1", "Finger2",  "Joystick"]  # Exact sequence of labels as were put by
 
-bodyparts = ['tail tip', 'back right shoulder', 'tail start', 'front left knee', 'front left foot', 'chin', 'back right knee', 'left eye', 'front right ankle', 'nosetip', 'front right shoulder', 'front left shoulder', 'back left foot', 'right eye', 'back right ankle', 'left ear', 'front right knee', 'front right foot', 'back left shoulder', 'neck', 'front left ankle', 'back right foot', 'back left knee', 'right ear', 'back left ankle']
+bodyparts = ['tail tip', 'back right shoulder', 'tail start', 'front left foot tip', 'front left knee', 'chin', 'back left foot tip', 'back right knee', 'left nostril', 'left eye', 'front right ankle', 'end of mane', 'left ear tip', 'front right foot tip', 'front left shoulder', 'right ear tip', 'right eye', 'back right ankle', 'start of mane', 'front right knee', 'front right shoulder', 'back left shoulder', 'front left ankle', 'back left knee', 'back left ankle', 'back right foot tip', 'right nostril']
+
+#['tail tip', 'back right shoulder', 'tail start', 'front left knee', 'front left foot', 'chin', 'back right knee', 'left eye', 'front right ankle', 'nosetip', 'front right shoulder', 'front left shoulder', 'back left foot', 'right eye', 'back right ankle', 'left ear', 'front right knee', 'front right foot', 'back left shoulder', 'neck', 'front left ankle', 'back right foot', 'back left knee', 'right ear', 'back left ankle']
 
 # annotator in *.csv file
 Scorers = ['AMT']  # who is labeling?
@@ -73,13 +75,13 @@ imagetype=".png" # image type of extracted frames (do not change if you used our
 colormap = 'hsv' #set color map, i.e. viridis, cool, hsv
 scale = 1  # for plotting
 msize=10   #size of labels
-alphavalue =.8 #transparency of labels
+alphavalue =.9 #transparency of labels
 
 ########################################
 # Step 4: Generate Training Files 
 ########################################
 
-date = 'May24' #'Aug2' #'May24' #'May03'#''May18'
+date = 'Oct2' #'May24' #'Aug2' #'May24' #'May03'#''May18'
 scorer = 'AMT' #'camila'
 
 # Userparameters for training set. Other parameters can be set in pose_cfg.yaml
@@ -97,7 +99,7 @@ resnet = 50
 # To evaluate model that was trained most set this to: "-1"
 # To evaluate all models (training stages) set this to: "all"
 
-snapshotindex = "all" #-1
+snapshotindex = -1# "all" #
 shuffleindex = 0
 
 pcutoff=.1 # likelihood. RMSE will be reported for all pairs and pairs with larger likelihood than pcutoff (see paper). This cutoff will also be used in plots.
